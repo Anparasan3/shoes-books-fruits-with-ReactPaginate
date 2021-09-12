@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

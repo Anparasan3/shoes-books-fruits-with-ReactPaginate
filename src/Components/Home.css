@@ -1,0 +1,30 @@
+.Home-Container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(218, 246, 237);
+}
+.Home-Container h1{
+    padding-top: 7%;
+}
+.Home-Product{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Home-Shoes{
+    margin: 15px 50px;
+    color: rgb(46, 43, 226);
+    cursor: pointer;
+}
+.Home-Shoes :hover{
+    color:rgb(234, 0, 255);
+}
+.products-link{
+    margin-top: 10px;
+    border: 1px solid lightsteelblue;
+    background-color: rgb(137, 214, 189);
+    border-radius: 8px;
+}

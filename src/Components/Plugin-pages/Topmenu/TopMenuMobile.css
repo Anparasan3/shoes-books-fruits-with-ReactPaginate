@@ -1,0 +1,21 @@
+.TopMenuMobile{
+    position: fixed;
+    max-width:250px;
+    top: 42px;
+    padding-bottom: 10px;
+    background-color:rgb(236, 236, 243);
+    border-radius: 8px;
+    height: 100vh;
+    overflow: auto;
+}
+.Home{
+    width: 230px;
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.Home:hover{
+    background-color: #fa1e74;
+}

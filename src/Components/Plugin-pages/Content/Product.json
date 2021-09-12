@@ -1,0 +1,444 @@
+{
+    "constantImage" : {
+        "name" : "https://i.pinimg.com/originals/88/45/ec/8845ecfd5c1a77c85a4f6ac19c45a907.png",
+        "id" : 5
+    },
+
+    "image" : [
+        {
+            "name" : "https://m.media-amazon.com/images/I/71fDfylOQgL._UY695_.jpg",
+            "id" : 1,
+            "productName" : "productName 1",
+            "colors" : {
+                "colorsTitle" : "Color:",
+                "colorvariety":[{"color":"rgba(242,242,240,255)"},{"color":"rgba(255,0,115,255)"}]
+            },
+            "starRate" : 4,
+            "Rs" : "USD 100",
+            "buynow" : "BUY NOW"
+        },
+        {
+            "name" : "https://i.pinimg.com/736x/33/35/d4/3335d478f0a0da8abe8d44ab13d0b0ff.jpg",
+            "id" : 2,
+            "productName" : "productName 2",
+            "colors" : {
+                "colorsTitle" : "Color:",
+                "colorvariety":[{"color":"rgba(180,184,191,255)"},{"color":"rgba(186,37,152,255)"}]
+            },
+            "starRate" : 3,
+            "Rs" : "USD 100",
+            "buynow" : "BUY NOW"
+        },
+        {
+            "name" : "https://i.pinimg.com/originals/6d/1b/26/6d1b26a7e93da553cf5af7c1aacf257d.png",
+            "id" : 3,
+            "productName" : "productName 3",
+            "colors" : {
+                "colorsTitle" : "Color:",
+                "colorvariety":[{"color":"rgba(29,44,74,255)"},{"color":"rgba(180,180,180,255)"}]
+            },
+            "starRate" : 4,
+            "Rs" : "USD 100",
+            "buynow" : "BUY NOW"
+        },
+        {
+            "name" : "https://i.pinimg.com/originals/9b/47/87/9b4787397b417c86b774f20a314b909c.jpg",
+            "id" : 4,
+            "productName" : "productName 4",
+            "colors" : { 
+                "colorsTitle" : "Color:",
+                "colorvariety":[{"color":"rgba(178,178,180,255)"},{"color":"rgba(57,80,255,255)"}]
+            },
+            "starRate" : 4,
+            "Rs" : "USD 100",
+            "buynow" : "BUY NOW"
+        },
+        {
+            "name" : "https://i.pinimg.com/originals/95/bf/e6/95bfe61d66dcaa0b660636474715bce3.jpg",
+            "id" : 5,
+            "productName" : "productName 5",
+            "colors" : {
+                "colorsTitle" : "Color:",
+                "colorvariety":[{"color":"rgba(206,211,115,255)"},{"color":"rgba(255,0,115,255)"}]
+            },
+            "starRate" : 4,
+            "Rs" : "USD 100",
+            "buynow" : "BUY NOW"
+        },
+        {
+            "name" : "https://i.pinimg.com/originals/55/74/2b/55742bc517731558fa4ca5265b807600.jpg",
+            "id" : 6,
+            "productName" : "productName 6",
+            "colors" : {
+                "colorsTitle" : "Color:",
+                "colorvariety":[{"color":"rgba(254,154,113,255)"},{"color":"rgba(57,80,255,255)"}]
+            },
+            "starRate" : 3,
+            "Rs" : "USD 100",
+            "buynow" : "BUY NOW"
+        }
+    ],
+
+
+
+    "bigimage":[
+        {
+            "name" : "https://m.media-amazon.com/images/I/71mXAIW3D8L._UL1500_.jpg",
+            "id"   : 7
+        },
+        { 
+            "name" : "https://i.pinimg.com/originals/5a/7a/10/5a7a107eb0fcd3135e0ca5e672a90db6.jpg",
+            "id"   : 12
+        },
+        {
+            "name" : "https://i.pinimg.com/originals/f5/33/9f/f5339fccc11e4df08c89af7e8f0160bd.jpg",
+            "id" : 15
+        }
+    ],
+    "otherBig" : [
+        {   
+            "name" : "https://1.bp.blogspot.com/-OHvP6yfGX1w/YRjxVyxc9eI/AAAAAAAAAE0/NEmzwjl1qvAmDD7FUHp4M5wf3qItxK6BwCLcBGAsYHQ/s1500/Shoes1.jpg",
+            "id"   : 8
+        },
+        {
+            "name" : "https://i.pinimg.com/originals/3a/81/ee/3a81ee411e7751cf743509f141d5419b.jpg",
+            "id" : 9
+        },
+        { 
+            "name" : "https://1.bp.blogspot.com/-reISYo3mFm0/YRjxV0DJh-I/AAAAAAAAAE4/YYpFjJijwlc79cA7b9sp4yS50ridD9O_QCLcBGAsYHQ/s1500/Shoes2.jpg",
+            "id"   : 10
+        },
+        { 
+            "name" : "https://1.bp.blogspot.com/-Mv4OVotUVvM/YRjxV0SxjQI/AAAAAAAAAE8/U3I1_5inCuYW-w3ZX8sznF-NqzoRB5rCQCLcBGAsYHQ/s1500/Shoes3.jpg",
+            "id"   : 11
+        }
+    ],
+
+
+
+
+
+
+    
+    "responseData____1":[
+        {
+            "productBatchId":12842,
+            "productId":5750,
+            "storeId":1287,
+            "productName":"Mango",
+            "productLongDescription":"No description",
+            "measuringUnitName":"Piece",
+            "onlineDiscountedPrice":2,
+            "onlineSellingPrice":2,
+            "discountPercentage":0,
+            "productImagePath":"https://5.imimg.com/data5/SELLER/Default/2021/3/VH/PW/PJ/41842470/mango-fresh-mango-ripe-mango-kesar-mango-kesar-gir-mango-500x500.jpg"
+        },
+        {
+            "productBatchId":29928,
+            "productId":5750,
+            "storeId":1298,
+            "productName":"Orange",
+            "productLongDescription":"No description",
+            "measuringUnitName":"Piece",
+            "onlineDiscountedPrice":2,
+            "onlineSellingPrice":2,
+            "discountPercentage":0,
+            "productImagePath":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV-IRvSq5hn8blHpB4_hfZxavLbV0Jvnh4rycUqjgM-g4LPxHGjj2vNnzELwWh8KQYOqI&usqp=CAU"
+        },
+        {
+            "productBatchId":37122,
+            "productId":5750,
+            "storeId":1299,
+            "productName":"grapes",
+            "productLongDescription":"No description",
+            "measuringUnitName":"Piece",
+            "onlineDiscountedPrice":2,
+            "onlineSellingPrice":2,
+            "discountPercentage":0,
+            "productImagePath":"https://www.aicr.org/wp-content/uploads/2020/01/shutterstock_533487490-640x462.jpg"
+        },
+        {
+            "productBatchId":43219,
+            "productId":5750,
+            "storeId":1300,
+            "productName":"Black grapes",
+            "productLongDescription":"No description",
+            "measuringUnitName":"Piece",
+            "onlineDiscountedPrice":2,
+            "onlineSellingPrice":2,
+            "discountPercentage":0,
+            "productImagePath":"https://www.collinsdictionary.com/images/full/grape_229112122.jpg"
+        },
+        {
+            "productBatchId":49316,
+            "productId":5750,
+            "storeId":1301,
+            "productName":"pomegranate",
+            "productLongDescription":"No description",
+            "measuringUnitName":"Piece",
+            "onlineDiscountedPrice":2,
+            "onlineSellingPrice":2,
+            "discountPercentage":0,
+            "productImagePath":"http://lh3.googleusercontent.com/rYmTH5D_RwVJn54w1-_73sdMRiW9eyUDf-FGa0nUtEMxDddXhioGhms8l3qgIIKYb6RRryocTVJfeZ5GsdAVxhw=s900"
+        },
+        {
+            "productBatchId":55413,
+            "productId":5750,
+            "storeId":1302,
+            "productName":"Bananas",
+            "productLongDescription":"No description",
+            "measuringUnitName":"Piece",
+            "onlineDiscountedPrice":2,
+            "onlineSellingPrice":2,
+            "discountPercentage":0,
+            "productImagePath":"https://cdn.mos.cms.futurecdn.net/42E9as7NaTaAi4A6JcuFwG-1200-80.jpg"
+        },
+        {
+            "productBatchId":61510,
+            "productId":5750,
+            "storeId":1304,
+            "productName":"Pineapple",
+            "productLongDescription":"No description",
+            "measuringUnitName":"Piece",
+            "onlineDiscountedPrice":2,
+            "onlineSellingPrice":2,
+            "discountPercentage":0,
+            "productImagePath":"https://5.imimg.com/data5/AY/NG/MY-54721038/fresh-pineapple-500x500.png"
+        },
+        {
+            "productBatchId":67607,
+            "productId":5750,
+            "storeId":1305,
+            "productName":"Watermelon",
+            "productLongDescription":"No description",
+            "measuringUnitName":"Piece",
+            "onlineDiscountedPrice":2,
+            "onlineSellingPrice":2,
+            "discountPercentage":0,
+            "productImagePath":"https://snaped.fns.usda.gov/sites/default/files/seasonal-produce/2018-05/watermelon.jpg"
+        },
+        {
+            "productBatchId":73704,
+            "productId":5750,
+            "storeId":1306,
+            "productName":"Strawberry",
+            "productLongDescription":"No description",
+            "measuringUnitName":"Piece",
+            "onlineDiscountedPrice":2,
+            "onlineSellingPrice":2,
+            "discountPercentage":0,
+            "productImagePath":"https://hips.hearstapps.com/clv.h-cdn.co/assets/15/22/1432664914-strawberry-facts1.jpg"
+        },
+        {
+            "productBatchId":79799,
+            "productId":5750,
+            "storeId":1288,
+            "productName":"Avocado",
+            "productLongDescription":"No description",
+            "measuringUnitName":"Piece",
+            "onlineDiscountedPrice":2,
+            "onlineSellingPrice":2,
+            "discountPercentage":0,
+            "productImagePath":"https://chefsmandala.com/wp-content/uploads/2018/03/Avocado.jpg"
+        }
+    ],
+    "totalCount":65681,
+
+
+
+
+
+    "responseCode___2": 0,
+    "responseMessage___2": "Success",
+    "responseData___2": [
+        {
+            "productBatchId": 5468,
+            "productId": 5296,
+            "productName": "Strawberry",
+            "productLongDescription": "This is a very good Red Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 25.50,
+            "productImagePath": "https://hips.hearstapps.com/clv.h-cdn.co/assets/15/22/1432664914-strawberry-facts1.jpg"
+        },
+        {
+            "productBatchId": 5498,
+            "productId": 5493,
+            "productName": "Avocado",
+            "productLongDescription": "This is a very good Green Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 55.24,
+            "productImagePath": "https://chefsmandala.com/wp-content/uploads/2018/03/Avocado.jpg"
+        },
+        {
+            "productBatchId": 5468,
+            "productId": 5296,
+            "productName": "Watermelon",
+            "productLongDescription": "This is a very good Red Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 25.50,
+            "productImagePath": "https://snaped.fns.usda.gov/sites/default/files/seasonal-produce/2018-05/watermelon.jpg"
+        },
+        {
+            "productBatchId": 5498,
+            "productId": 5493,
+            "productName": "Pineapple",
+            "productLongDescription": "This is a very good Green Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 55.24,
+            "productImagePath": "https://5.imimg.com/data5/AY/NG/MY-54721038/fresh-pineapple-500x500.png"
+        },
+        {
+            "productBatchId": 5468,
+            "productId": 5296,
+            "productName": "Bananas",
+            "productLongDescription": "This is a very good Red Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 25.50,
+            "productImagePath": "https://cdn.mos.cms.futurecdn.net/42E9as7NaTaAi4A6JcuFwG-1200-80.jpg"
+        },
+        {
+            "productBatchId": 5498,
+            "productId": 5493,
+            "productName": "Black grapes",
+            "productLongDescription": "This is a very good Green Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 55.24,
+            "productImagePath": "https://www.collinsdictionary.com/images/full/grape_229112122.jpg"
+        },
+        {
+            "productBatchId": 5468,
+            "productId": 5296,
+            "productName": "pomegranate",
+            "productLongDescription": "This is a very good Red Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 25.50,
+            "productImagePath": "http://lh3.googleusercontent.com/rYmTH5D_RwVJn54w1-_73sdMRiW9eyUDf-FGa0nUtEMxDddXhioGhms8l3qgIIKYb6RRryocTVJfeZ5GsdAVxhw=s900"
+        },
+        {
+            "productBatchId": 5498,
+            "productId": 5493,
+            "productName": "Grapes",
+            "productLongDescription": "This is a very good Green Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 55.24,
+            "productImagePath": "https://www.aicr.org/wp-content/uploads/2020/01/shutterstock_533487490-640x462.jpg"
+        },
+        {
+            "productBatchId": 5468,
+            "productId": 5296,
+            "productName": "Mango",
+            "productLongDescription": "This is a very good Red Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 25.50,
+            "productImagePath": "https://5.imimg.com/data5/SELLER/Default/2021/3/VH/PW/PJ/41842470/mango-fresh-mango-ripe-mango-kesar-mango-kesar-gir-mango-500x500.jpg"
+        },
+        {
+            "productBatchId": 5498,
+            "productId": 5493,
+            "productName": "Orange",
+            "productLongDescription": "This is a very good Green Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 55.24,
+            "productImagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV-IRvSq5hn8blHpB4_hfZxavLbV0Jvnh4rycUqjgM-g4LPxHGjj2vNnzELwWh8KQYOqI&usqp=CAU"
+        }
+    ],
+    
+    
+
+
+
+    "responseCode": 0,
+    "responseMessage": "Success",
+    "responseData": [
+        {
+            "productBatchId": 5468,
+            "productId": 5296,
+            "productName": "Strawberry",
+            "productLongDescription": "This is a very good Red Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 25.50,
+            "productImagePath": "https://hips.hearstapps.com/clv.h-cdn.co/assets/15/22/1432664914-strawberry-facts1.jpg"
+        },
+        {
+            "productBatchId": 5498,
+            "productId": 5493,
+            "productName": "Avocado",
+            "productLongDescription": "This is a very good Green Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 55.24,
+            "productImagePath": "https://chefsmandala.com/wp-content/uploads/2018/03/Avocado.jpg"
+        },
+        {
+            "productBatchId": 5468,
+            "productId": 5296,
+            "productName": "Watermelon",
+            "productLongDescription": "This is a very good Red Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 25.50,
+            "productImagePath": "https://snaped.fns.usda.gov/sites/default/files/seasonal-produce/2018-05/watermelon.jpg"
+        },
+        {
+            "productBatchId": 5498,
+            "productId": 5493,
+            "productName": "Pineapple",
+            "productLongDescription": "This is a very good Green Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 55.24,
+            "productImagePath": "https://5.imimg.com/data5/AY/NG/MY-54721038/fresh-pineapple-500x500.png"
+        },
+        {
+            "productBatchId": 5468,
+            "productId": 5296,
+            "productName": "Bananas",
+            "productLongDescription": "This is a very good Red Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 25.50,
+            "productImagePath": "https://cdn.mos.cms.futurecdn.net/42E9as7NaTaAi4A6JcuFwG-1200-80.jpg"
+        },
+        {
+            "productBatchId": 5498,
+            "productId": 5493,
+            "productName": "Black grapes",
+            "productLongDescription": "This is a very good Green Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 55.24,
+            "productImagePath": "https://www.collinsdictionary.com/images/full/grape_229112122.jpg"
+        },
+        {
+            "productBatchId": 5468,
+            "productId": 5296,
+            "productName": "pomegranate",
+            "productLongDescription": "This is a very good Red Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 25.50,
+            "productImagePath": "http://lh3.googleusercontent.com/rYmTH5D_RwVJn54w1-_73sdMRiW9eyUDf-FGa0nUtEMxDddXhioGhms8l3qgIIKYb6RRryocTVJfeZ5GsdAVxhw=s900"
+        },
+        {
+            "productBatchId": 5498,
+            "productId": 5493,
+            "productName": "Grapes",
+            "productLongDescription": "This is a very good Green Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 55.24,
+            "productImagePath": "https://www.aicr.org/wp-content/uploads/2020/01/shutterstock_533487490-640x462.jpg"
+        },
+        {
+            "productBatchId": 5468,
+            "productId": 5296,
+            "productName": "Mango",
+            "productLongDescription": "This is a very good Red Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 25.50,
+            "productImagePath": "https://5.imimg.com/data5/SELLER/Default/2021/3/VH/PW/PJ/41842470/mango-fresh-mango-ripe-mango-kesar-mango-kesar-gir-mango-500x500.jpg"
+        },
+        {
+            "productBatchId": 5498,
+            "productId": 5493,
+            "productName": "Orange",
+            "productLongDescription": "This is a very good Green Apple",
+            "measuringUnitName": "Kg",
+            "onlineSellingPrice": 55.24,
+            "productImagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV-IRvSq5hn8blHpB4_hfZxavLbV0Jvnh4rycUqjgM-g4LPxHGjj2vNnzELwWh8KQYOqI&usqp=CAU"
+        }
+    ]
+}  

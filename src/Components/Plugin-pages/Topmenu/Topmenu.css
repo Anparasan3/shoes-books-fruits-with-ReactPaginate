@@ -1,0 +1,86 @@
+.Topmenu-Container{
+    background-color: #fa1e74;
+    display: flex;
+    margin-top: 0;
+    top: 0;
+    padding: 0%;
+    height: 10%;
+    width: 100%;
+}
+
+.Topmenu-Text{
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+}
+.Agora{
+    text-align: center;
+    font-size: 22px;
+    padding-top: 20px;
+}
+.Top-Content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+@media only screen and (max-width:600px){
+    .Top-Content{
+        display: none;
+    }
+    body .Topmenu-Text{
+        width: 100%;
+        text-align: center;
+    }
+    body .Agora{
+        width: 100%;
+        text-align: center;
+    }
+}
+.Titles{
+    display: flex;
+    font-size: 22px;
+    justify-content: right;
+    padding: 18px;
+}
+@media only screen and (max-width:1100px) {
+    .Topmenu-Container{
+        height: auto;
+    }
+    .Topmenu-Text{
+        margin-left: 30px;
+    }
+}
+
+.top-bar-mobile{
+    display: none;
+}
+@media only screen and (max-width:600px) {
+    .Agora{
+        display: none;
+    }
+    .top-bar-mobile{
+        width: 100%; 
+        display: block;
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+    }
+    .agora-mobile{
+        text-align: center;
+        font-size: 22px;
+        width: 100%;
+    }
+    .Topmenu-Text{
+        margin: 5px 20px;
+    }
+    .fas{
+        margin-top: 5px;
+        font-size: 22px;
+    }
+}

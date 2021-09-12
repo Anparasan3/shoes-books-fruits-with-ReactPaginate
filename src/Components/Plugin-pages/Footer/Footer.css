@@ -1,0 +1,78 @@
+.Footer-Container{
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(98,98,98,255);
+}
+@media only screen and (max-width:900px) {
+    .Footer-Container{
+        height: auto;
+    }
+}
+
+.footerContent{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 28px;
+    padding-right: 28px;
+    justify-content: space-between;
+}
+.FooterFirstBox{
+    padding-top: 20px;
+    min-width: 300px;
+}
+.FooterSecondBox{
+    padding-top: 20px;
+    min-width: 300px;
+}
+.FooterThirdBox{
+    min-width: 300px;
+    padding-top: 20px;
+    display: flex;
+}
+@media only screen and (max-width:375px) {
+    .FooterThirdBox{
+        justify-content: center;
+    }
+    .FooterThirdBox{
+        min-width: 240px;
+    }
+    .FooterSecondBox{
+        min-width: 240px;
+    }
+    .FooterFirstBox{
+        min-width: 240px;
+    }
+}
+.SocialIcons{
+    font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.addressWhiteTexts{
+    color: white;
+}
+.address{
+    /* font-family: Poppins; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: -0.3px;
+    color: #080808;
+}
+.Years{
+    padding-top: 14px;
+}
+.whiteText{
+    color: white;
+    padding-bottom: 17px;
+}
+.text{
+    padding-bottom: 17px;
+}
