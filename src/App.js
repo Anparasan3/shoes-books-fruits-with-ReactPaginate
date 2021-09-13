@@ -9,6 +9,7 @@ function App() {
       <Router>
         <Switch>
           <Route path='/' component={Home} exact/>
+          <Route path='/shoes-books-fruits-with-ReactPaginate' component={Home} exact/>
           <Route path='/search' component={Search}/>
         </Switch>
       </Router>
