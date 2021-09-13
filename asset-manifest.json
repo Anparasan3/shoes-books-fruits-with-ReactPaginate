@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/shoes-books-fruits-with-ReactPaginate/static/css/main.2aaff113.chunk.css",
-    "main.js": "/shoes-books-fruits-with-ReactPaginate/static/js/main.92c3474a.chunk.js",
-    "main.js.map": "/shoes-books-fruits-with-ReactPaginate/static/js/main.92c3474a.chunk.js.map",
+    "main.js": "/shoes-books-fruits-with-ReactPaginate/static/js/main.bf16c839.chunk.js",
+    "main.js.map": "/shoes-books-fruits-with-ReactPaginate/static/js/main.bf16c839.chunk.js.map",
     "runtime-main.js": "/shoes-books-fruits-with-ReactPaginate/static/js/runtime-main.30f06b70.js",
     "runtime-main.js.map": "/shoes-books-fruits-with-ReactPaginate/static/js/runtime-main.30f06b70.js.map",
     "static/js/2.82c4bc28.chunk.js": "/shoes-books-fruits-with-ReactPaginate/static/js/2.82c4bc28.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.30f06b70.js",
     "static/js/3.a3171874.chunk.js",
     "static/css/main.2aaff113.chunk.css",
-    "static/js/main.92c3474a.chunk.js"
+    "static/js/main.bf16c839.chunk.js"
   ]
 }
