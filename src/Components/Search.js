@@ -5,30 +5,32 @@ import Chat from './Plugin-pages/Chat/Chat';
 
 import Topmenu from './Plugin-pages/Topmenu/Topmenu';
 import Footer from './Plugin-pages/Footer/Footer';
-//import Content from './Plugin-pages/Content/Content';
-
+// import Content from './Plugin-pages/Content/Content';
 const Content = lazy(() => import('./Plugin-pages/Content/Content'));
 
 export default function Search({ location }) {
-    const [topMenuMobileState, setTopMenuMobileState] = useState('false');
 
-    const params = new URLSearchParams(location.search);
+    const [topMenuMobileState, setTopMenuMobileState] = useState('false');
+    const params = new URLSearchParams(window.location.search);
     const q = params.get('q');
-    console.log(". . . .",q);
     var searchProduct = q;
 
-    var url = '';
-    if(searchProduct.split('_')[0] === "shoes"){
-        console.log("working");
-        url = 'https://json.extendsclass.com/bin/e0e97d344c2b';
-    }
-    else if (searchProduct.split('_')[0] === "books") {
-        url = 'https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=kwIW3S2ch3Ur3wW3ndPuYWfpCZLkonmB';
-    }
-    else if (searchProduct.split('_')[0] === "fruits") {
-        url = 'https://json.extendsclass.com/bin/2508dcc3470a';
-    }
-    
+    //var url = '';
+    // if(searchProduct.split('_')[0] === "shoes"){
+    //     url = 'https://json.extendsclass.com/bin/e0e97d344c2b';
+    // }
+    // else if (searchProduct.split('_')[0] === "books") {
+    //     url = 'https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=kwIW3S2ch3Ur3wW3ndPuYWfpCZLkonmB';
+    // }
+    // else if (searchProduct.split('_')[0] === "fruits") {
+    //     url = 'https://json.extendsclass.com/bin/2508dcc3470a';
+    // }
+
+    console.log('* * * * * * * * * * * * * * * * * *')
+    console.log('       <- {^_^} ->', ' hai!!')
+    console.log('       welcome to console!')
+    console.log('* * * * * * * * * * * * * * * * * *')
+
     return(
         <div>
             <Suspense fallback={<div>Loading....</div>}>
@@ -36,7 +38,7 @@ export default function Search({ location }) {
                     topMenuMobileState={topMenuMobileState}
                     setTopMenuMobileState={setTopMenuMobileState}
                 />
-                <Content url={url} searchProduct={searchProduct}/>
+                <Content searchProduct={searchProduct} />
                 <Footer/>
                 <TopMenuMobile 
                     topMenuMobileState={topMenuMobileState}

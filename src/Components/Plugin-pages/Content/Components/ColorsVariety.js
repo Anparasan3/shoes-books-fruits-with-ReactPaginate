@@ -10,7 +10,7 @@ const ColorButton = styled.button`
     border: 1px solid black;
     border-radius: 20px;
     background-color:${(props) =>  props.ColorButtonColor};
-    transform: ${(props) => props.ColorButtonColor === props.currentColor ? "scale(1.25)": "scale(1)"};
+    transform: ${(props) => props.ColorButtonColor === props.currentColor ? "scale(1)": "scale(0.8)"};
 `;
 
 export default function ColorsVariety(props) {

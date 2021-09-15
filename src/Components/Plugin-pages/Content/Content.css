@@ -20,6 +20,7 @@
     justify-content:space-between;
 }
 .productTittle{
+    padding-top: 20px;
     padding-left: 150px;
 }
 .productImageConstant{
@@ -55,10 +56,6 @@
     grid-template-columns: auto auto auto;
     justify-content: space-between;
     padding-bottom: 40px; 
-    /* display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: flex-start; */
 }
 .bookscoloumns{
     grid-template-columns: auto auto auto auto;
@@ -71,11 +68,20 @@
     flex: auto; 
 }
 .product-content-image{
-    /* width: 280px;
-    min-height: 340px; */
-    width: 440px;
+    width: 420px;
     margin-top: 30px;
     height: auto;
+    /* transition: transform 1s; transition-delay: 2s; */
+    transition-property: margin-right, margin-left, padding, transform, background-color, ;
+    transition-duration: 1s;
+    transition-delay: 1s;
+}
+.product-content-image:hover{
+    padding: 8px;
+    transform: scale(1.15);
+    border-radius: 8px;
+    /* background: linear-gradient(+45deg, lightblue 30%, rgb(17, 59, 245)); */
+    background-color: rgba(0, 0, 0, 0.13);
 }
 .books{
     width: 280px;
@@ -88,15 +94,11 @@
 }
 .productImage{
     border-radius: 5px;
-    /* width: 340px; */
     width: 100%;
     height: 240px;
+    background: transparent;
 }
 .productImage-books{
-    /* margin-top: 50px; */
-    /* border: 1px solid rgb(199, 197, 197);
-    border-radius: 5px; */
-    /* width: 340px; */
     width: 100%;
     max-height: 340px;
 }
@@ -129,7 +131,6 @@
 }
 
 .productNameAndRupee{
-    /* width: 340px; */
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -159,13 +160,34 @@
     padding-top: 10px;
     color: rgb(88, 88, 88);
 }
-
+@media only screen and (max-width: 1066px) {
+    .product-content-image{
+        max-width: 300px;
+    }
+    .productImage{
+        max-height: 200px;
+    }
+}
+@media only screen and (max-width:1225px) {
+    .productImage-books{
+        width: 100%;
+    }
+    .books{
+        width: 250px;
+        min-height: 340px;
+    }
+}
+@media only screen and (max-width:1164px) {
+    .books{
+        width: 230px;
+    }
+}
 @media only screen and (max-width:1160px) {
     .product-content-image{
         width: 330px;
     }
     .productImage{
-        height: 250px;
+        height: 230px;
     }
 }
 
@@ -176,19 +198,12 @@
     }
     .productTittle{
         padding-left: 50px;
-    }
-    .productImage{
-        /* width: 300px; */
-        width: 100%;
-        /* height: 300px; */
+        padding-top: 10px;
     }
     .productImage-books{
-        /* width: 300px;
-        height: 300px; */
         width: 100%;
     }
     .product-content-image{
-        /* width: 300px; */
         height: auto;
     }
     .ProductConstantImage-books{
@@ -201,22 +216,15 @@
 @media only screen and (max-width:1000px){
     .product-content-image{
         min-width: 280px;
-        /* height: 260px; */
     }
-    /* .productImage-books{
-        /* width: 260px; * /
-        width: 100%;
-        height: 260px;
-    } */
 }
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:910px) {
     .product-container{
         grid-template-columns: auto auto auto;
     }
-    .product-content-image{
-        /* width: 300px; */
+    /* .product-content-image{
         height: auto;
-    }
+    } */
     .ProductConstantImage{
         min-height: auto;
         min-width: auto;
@@ -250,24 +258,17 @@
         min-width: 230px;
     }
     .productImage{
-        height: 160px;
+        height: 120px;
     }
 }
 @media (max-width:970px) {
     .product-content-image{
         width: 150px;
     }
+    .productImage{
+        max-height: 140px;
+    }
 }
-/* @media (max-width:850px) {
-    .product-content-image{
-        min-width: 230px;
-    }
-} */
-/* @media (min-width:670px) {
-    .product-content-image{
-        max-width: 280px;
-    }
-} */
 @media (max-width:760px) {
     .product-container{
         justify-content: space-between;
@@ -278,25 +279,9 @@
     }
 }
 @media only screen and (max-width:670px){
-    /* .product-container{
-        grid-template-columns: auto auto;
-    } */
-    /* .product-container{
-        display: flex;
-        justify-content: space-between;
-        flex-flow: row wrap;
-    } */
     .product-content-image{
         width: 250px;
         height: auto;
-    }
-    .productImage{
-        width: 100%;
-        /* height: 250px; */
-    }
-    .productImage-books{
-        width: 250px;
-        height: 250px;
     }
 }
 @media only screen and (max-width:600px) {
@@ -314,41 +299,43 @@
         height: auto;
     }
     .productImage{
-        width: 100%;
         height: 140px;
+    }
+}
+@media only screen and (max-width:556px) {
+    .product-container-image .books{
+        width:230px
     }
     .productImage-books{
         width: 100%;
-        height: 150px;
     }
+    
 }
-@media only screen and (max-width:525px) {
+@media only screen and (max-width:528px) {
+    .image-div{
+        padding: 20px;
+    }
     .product-container{
-     grid-template-columns: auto auto;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
     } 
     .product-content-image{
         width: 200px;
-    }
-    .productImage-books{
-        width: 100%;
-    }
- }
-@media only screen and (max-width:510px){
-    .product-content-image{
         min-width: 175px;
         height: auto;
     }
     .productImage{
-        width: 100%;
         height: 100px
     }
     .productImage-books{
-        /* width: 140px; */
         width: 100%;
-        height: 140px;
+        height: 220px;
     }
 }
 @media only screen and (max-width:420px) {
+    .product-container{
+        justify-content: space-between;
+    }
     .buynow{
         width: 100px;
         padding: 5px;
@@ -413,33 +400,6 @@
     width: 100%;
 }
 
-
-
-
-/* .grid-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-around;
-    grid-row-gap: 50px;
-    margin: 50px 0px;
-}
-.grid{
-    display: grid;
-    height: 380px;
-    width: 300px;
-    background-color: chocolate;
-}
-.grid-image{
-    display: grid;
-    height: 100%;
-    width: 100%;
-} */
 .author{
     max-width: 380px;
 }
-/* @media only screen and (max-width:1100px){
-    .grid-image{
-        height: 300px;
-        width: 250px;
-    }
-} */

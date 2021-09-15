@@ -6,37 +6,32 @@ import ConstantProduct from './Components/ConstantProduct.js';
 import PaginateComponent from './PaginateComponent';
 
 export default function Content(props){
-    const [images, setImages] = useState([]);
-    const [imagesDefault, setImagesDefault] = useState([]);
+
+    const [books, setBooks] = useState([]);
 
     useEffect( () => {
-        axios.get(props.url).then(res => {
-            if (props.searchProduct === 'shoes'){
-                console.log(res.data);
-                setImagesDefault(res.data.constantImage)
-                setImages(res.data.image)
-            } else if(props.searchProduct === 'fruits'){
-                console.log(res)
-                setImagesDefault('https://freepngimg.com/thumb/fruit/4-2-fruit-png-image.png')
-                setImages(res.data.responseData)
-            } else if(props.searchProduct === 'books') {
-                console.log(res.data.results.books)
-                setImages(res.data.results.books)
-                setImagesDefault(`https://www.animatedimages.org/data/media/53/animated-book-image-0032.gif`)
-            }
-        })
-    },[props])
+        if(props.searchProduct === 'books'){
+            axios.get(`https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=kwIW3S2ch3Ur3wW3ndPuYWfpCZLkonmB`)
+                .then(res => {
+                    console.log(res)
+                    setBooks(res.data.results.books)
+                })
+        } else {
+            setBooks('no data')
+        }
+    },[props.searchProduct]);
+    console.log(books);
     
     return(
         <div className="Content-Container">
             <div className="content">
                 <ConstantProduct 
-                    imagesDefault={imagesDefault}
-                    images={images}
+                    searchProduct={props.searchProduct}
                 />
-                {/* <div className={props.searchProduct==="books" ? "product-container bookscoloumns":"product-container"}> */}
-                    <PaginateComponent images={images} searchProduct={props.searchProduct}/>
-                {/* </div> */}
+                <PaginateComponent 
+                    books={books}
+                    searchProduct={props.searchProduct}
+                />
             </div>
         </div> 
     );

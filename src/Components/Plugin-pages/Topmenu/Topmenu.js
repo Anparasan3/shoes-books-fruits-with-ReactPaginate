@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Topmenu.css'
 //import TopMenuMobile from './TopMenuMobile';
 
-
-
 export default function Topmenu(props){
+
     function TopMenuMobileView(){
         if(props.topMenuMobileState === 'false'){
             props.setTopMenuMobileState('true');
@@ -13,7 +12,6 @@ export default function Topmenu(props){
             props.setTopMenuMobileState('false');
         }
     }
-
 
     return(
         <div className="Topmenu-Container">
@@ -26,10 +24,10 @@ export default function Topmenu(props){
                 </div>
                 <div className="Agora">AGORA</div>
                 <div className="Top-Content">
-                    <div className="Titles">Home</div>
-                    <div className="Titles">Products</div>
-                    <div className="Titles">About Us</div>
-                    <div className="Titles">Contact Us</div>
+                    <div className="Titles"><span>Home</span></div>
+                    <div className="Titles"><span>Products</span></div>
+                    <div className="Titles"><span>About Us</span></div>
+                    <div className="Titles"><span>Contact Us</span></div>
                 </div>
             </div>
         </div>

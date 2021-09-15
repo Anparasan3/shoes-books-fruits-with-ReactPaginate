@@ -48,6 +48,9 @@
     justify-content: right;
     padding: 18px;
 }
+.Titles span{
+    cursor: pointer;
+}
 @media only screen and (max-width:1100px) {
     .Topmenu-Container{
         height: auto;
