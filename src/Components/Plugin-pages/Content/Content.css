@@ -117,7 +117,6 @@
     border-radius: 5px;
     border: none;
 }
-
 .Colors{
     display: flex;
     align-content: flex-start;
@@ -129,7 +128,6 @@
     display: flex;
     padding-left: 10px;
 }
-
 .productNameAndRupee{
     display: flex;
     justify-content: space-between;
@@ -160,12 +158,17 @@
     padding-top: 10px;
     color: rgb(88, 88, 88);
 }
-@media only screen and (max-width: 1066px) {
+@media only screen and (max-width:1330px) {
     .product-content-image{
-        max-width: 300px;
+        max-width: 400px;
     }
-    .productImage{
-        max-height: 200px;
+}
+@media only screen and (max-width:1275px){
+    .product-content-image{
+        width: 380px;
+    }
+    .books{
+        max-width: 250px;
     }
 }
 @media only screen and (max-width:1225px) {
@@ -175,6 +178,9 @@
     .books{
         max-width: 250px;
         min-height: 340px;
+    }
+    .product-content-image{
+        width: 360px;
     }
 }
 @media only screen and (max-width:1164px) {
@@ -209,6 +215,14 @@
     }
     .rupees{
         min-width: 60px;
+    }
+}
+@media only screen and (max-width: 1066px) {
+    .product-content-image{
+        max-width: 300px;
+    }
+    .productImage{
+        max-height: 200px;
     }
 }
 @media only screen and (max-width:1000px){
