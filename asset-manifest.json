@@ -3,15 +3,15 @@
     "main.css": "/shoes-books-fruits-with-ReactPaginate/static/css/main.854c64db.chunk.css",
     "main.js": "/shoes-books-fruits-with-ReactPaginate/static/js/main.155a8871.chunk.js",
     "main.js.map": "/shoes-books-fruits-with-ReactPaginate/static/js/main.155a8871.chunk.js.map",
-    "runtime-main.js": "/shoes-books-fruits-with-ReactPaginate/static/js/runtime-main.6a1f2f6a.js",
-    "runtime-main.js.map": "/shoes-books-fruits-with-ReactPaginate/static/js/runtime-main.6a1f2f6a.js.map",
+    "runtime-main.js": "/shoes-books-fruits-with-ReactPaginate/static/js/runtime-main.f030b0cd.js",
+    "runtime-main.js.map": "/shoes-books-fruits-with-ReactPaginate/static/js/runtime-main.f030b0cd.js.map",
     "static/js/2.82c4bc28.chunk.js": "/shoes-books-fruits-with-ReactPaginate/static/js/2.82c4bc28.chunk.js",
     "static/js/2.82c4bc28.chunk.js.map": "/shoes-books-fruits-with-ReactPaginate/static/js/2.82c4bc28.chunk.js.map",
     "static/js/3.a3171874.chunk.js": "/shoes-books-fruits-with-ReactPaginate/static/js/3.a3171874.chunk.js",
     "static/js/3.a3171874.chunk.js.map": "/shoes-books-fruits-with-ReactPaginate/static/js/3.a3171874.chunk.js.map",
     "static/css/4.1e98379a.chunk.css": "/shoes-books-fruits-with-ReactPaginate/static/css/4.1e98379a.chunk.css",
-    "static/js/4.568b9fff.chunk.js": "/shoes-books-fruits-with-ReactPaginate/static/js/4.568b9fff.chunk.js",
-    "static/js/4.568b9fff.chunk.js.map": "/shoes-books-fruits-with-ReactPaginate/static/js/4.568b9fff.chunk.js.map",
+    "static/js/4.c53fe852.chunk.js": "/shoes-books-fruits-with-ReactPaginate/static/js/4.c53fe852.chunk.js",
+    "static/js/4.c53fe852.chunk.js.map": "/shoes-books-fruits-with-ReactPaginate/static/js/4.c53fe852.chunk.js.map",
     "index.html": "/shoes-books-fruits-with-ReactPaginate/index.html",
     "static/css/4.1e98379a.chunk.css.map": "/shoes-books-fruits-with-ReactPaginate/static/css/4.1e98379a.chunk.css.map",
     "static/css/main.854c64db.chunk.css.map": "/shoes-books-fruits-with-ReactPaginate/static/css/main.854c64db.chunk.css.map",
@@ -20,7 +20,7 @@
     "static/media/MessageIcon.64552d8a.png": "/shoes-books-fruits-with-ReactPaginate/static/media/MessageIcon.64552d8a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6a1f2f6a.js",
+    "static/js/runtime-main.f030b0cd.js",
     "static/js/3.a3171874.chunk.js",
     "static/css/main.854c64db.chunk.css",
     "static/js/main.155a8871.chunk.js"
