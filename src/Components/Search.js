@@ -5,14 +5,16 @@ import Chat from './Plugin-pages/Chat/Chat';
 
 import Topmenu from './Plugin-pages/Topmenu/Topmenu';
 import Footer from './Plugin-pages/Footer/Footer';
-// import Content from './Plugin-pages/Content/Content';
-const Content = lazy(() => import('./Plugin-pages/Content/Content'));
+import Content from './Plugin-pages/Content/Content';
+// const Content = lazy(() => import('./Plugin-pages/Content/Content'));
 
 export default function Search({ location }) {
 
+    console.log('before q')
     const [topMenuMobileState, setTopMenuMobileState] = useState('false');
     const params = new URLSearchParams(window.location.search);
     const q = params.get('q');
+    console.log('testing q : ',q)
     var searchProduct = q;
 
     //var url = '';

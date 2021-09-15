@@ -10,7 +10,7 @@ function App() {
         <Switch>
           <Route path='/' component={Home} exact/>
           <Route path='/shoes-books-fruits-with-ReactPaginate' component={Home} exact/>
-          <Route path='/search' component={Search}/>
+          <Route path='/shoes-books-fruits-with-ReactPaginate/search' component={Search}/>
         </Switch>
       </Router>
     </div>
