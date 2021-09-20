@@ -1,3 +1,4 @@
+import './Home.css';
 import React, { useState, lazy, Suspense } from 'react';
 
 import TopMenuMobile from './Plugin-pages/Topmenu/TopMenuMobile';
@@ -5,12 +6,11 @@ import Chat from './Plugin-pages/Chat/Chat';
 
 import Topmenu from './Plugin-pages/Topmenu/Topmenu';
 import Footer from './Plugin-pages/Footer/Footer';
-import Content from './Plugin-pages/Content/Content';
-// const Content = lazy(() => import('./Plugin-pages/Content/Content'));
+// import Content from './Plugin-pages/Content/Content';
+const Content = lazy(() => import('./Plugin-pages/Content/Content'));
 
 export default function Search({ location }) {
 
-    console.log('before q')
     const [topMenuMobileState, setTopMenuMobileState] = useState('false');
     const params = new URLSearchParams(window.location.search);
     const q = params.get('q');
@@ -35,12 +35,14 @@ export default function Search({ location }) {
 
     return(
         <div>
-            <Suspense fallback={<div>Loading....</div>}>
+            <Suspense fallback={<div className='loading'><h1>Loading....<br>Please Wait.</br></h1></div>}>
                 <Topmenu 
                     topMenuMobileState={topMenuMobileState}
                     setTopMenuMobileState={setTopMenuMobileState}
                 />
-                <Content searchProduct={searchProduct} />
+                <Suspense fallback={<div className='loading'><h1>Loading....</h1></div>}>
+                    <Content searchProduct={searchProduct} />
+                </Suspense>
                 <Footer/>
                 <TopMenuMobile 
                     topMenuMobileState={topMenuMobileState}

@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, lazy } from 'react';
+import { Suspense } from 'react';
 import ReactPaginate from 'react-paginate';
 
 import './Content.css';
 
-import RealContent from './Components/RealContent';
+// import RealContent from './Components/RealContent';
+const RealContent = lazy(() => import('./Components/RealContent'));
 
 export default function PaginateComponent(props) {
 
@@ -30,7 +32,6 @@ export default function PaginateComponent(props) {
         return data;
     }
 
-
     const handlePageClick = async (data) => {
         console.log(data.selected);
         let currentPage = data.selected + 1
@@ -40,9 +41,14 @@ export default function PaginateComponent(props) {
 
     return (
         <>
-            <RealContent items={items} books={props.books} searchProduct={props.searchProduct}/>
+            <Suspense fallback={<div className='loading'><h2>Loading products<br/>Please wait.</h2></div>}>
+                <selection id="selection">
+                    <RealContent items={items} books={props.books} searchProduct={props.searchProduct} />
+                </selection>
+            </Suspense>
             {
                 searchProduct === "books" ? "" :
+                    <a href="#selection" className="selection">
                     <div className="paginateClass">
                         <ReactPaginate
                             previousLabel={'<<'}
@@ -62,8 +68,10 @@ export default function PaginateComponent(props) {
                             breakClassName={'page-item'}
                             breakLinkClassName={'page-link'}
                             activeClassName={'active'}
+                            href="#selection"
                         />
                     </div>
+                    </a>
             }
         </>
     )

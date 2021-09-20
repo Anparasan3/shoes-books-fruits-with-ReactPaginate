@@ -25,7 +25,7 @@ export default function RealContent(props) {
                             <div className={props.searchProduct === "books" ? "product-content-image books" : "product-content-image"}>
                                 <div className={props.searchProduct === "books" ? "" : "image-div"}>
                                     <img
-                                        src={im.productImagePath || im.book_image || im.name}
+                                        src={im.productImagePath || im.book_image || im.name || im.url}
                                         className={im.book_image ? "productImage-books" : "productImage"}
                                         alt="products" key={im.id}
                                         // loading="lazy"
@@ -55,7 +55,7 @@ export default function RealContent(props) {
                         );
                     })
                 }
-            </div>  
+            </div> 
         </>
     )
 }

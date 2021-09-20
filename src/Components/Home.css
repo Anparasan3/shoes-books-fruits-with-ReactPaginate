@@ -35,3 +35,23 @@
     border: 1px solid rgb(132, 174, 230);
     transform: scale(1.15);
 }
+
+
+/* . . . . Search . . . . */
+.loading{
+    width: 100%;
+    min-height: 100vmax;
+    background-color: rgba(212, 220, 245, 0.555);
+    text-align: center;
+    margin: 0;
+}
+.loading h1{
+    padding-top: 50px;
+}
+.loading h2{
+    margin: 50px;
+    padding-top: 50px;
+}
+.selection{
+    text-decoration: none;
+}
