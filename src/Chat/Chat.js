@@ -23,6 +23,4 @@ export default function Chat(){
 }
 
 
-
-
-// <i class="far fa-comment-alt" />
+/* <i class="far fa-comment-alt" /> */
