@@ -13,13 +13,17 @@ export default function Main({ location }){
     let searchProduct = ''
     let limits = 6;
     if(q === 'shoes'){
-        searchProduct = `https://plugin-content-api.herokuapp.com/shoes`
+        // searchProduct = `https://plugin-content-api.herokuapp.com/shoes`
+        searchProduct = `https://plugin-content-original-api.herokuapp.com/product`;
     } else if (q === 'fruits'){
         searchProduct = `https://plugin-content-api.herokuapp.com/fruits`
     } else if (q === 'books'){
         searchProduct = `https://plugin-content-api.herokuapp.com/books`
         limits = 8
-    }
+    } 
+    // else if (q === 'product') {
+    //     searchProduct = `https://plugin-content-original-api.herokuapp.com/product`;
+    // }
 
     useEffect(() => {
         const getComments = async () => {
@@ -53,7 +57,7 @@ export default function Main({ location }){
         <Suspense fallback={<div className='loading'><h1>Loading....<br><h2>Please Wait.</h2></br></h1></div>}>
             <div className="main-container">
                 <TopComponent items={items} q={q} />
-                <RealContent items={items} searchProduct={searchProduct} />
+                <RealContent items={items} searchProduct={searchProduct} q={q} />
                 <ReactPaginate
                     previousLabel={'<<'}
                     nextLabel={'>>'}

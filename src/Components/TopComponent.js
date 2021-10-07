@@ -14,18 +14,21 @@ export default function TopComponent(props) {
         }
     }
     return (
-        <div className="productConstant-container">
-            <div className="productTittle">
+        <div className = "productConstant-container">
+            <div className = "productTittle">
                 <h1>EXPLORE<br />THE ORIGINAL BRANDS</h1>
                 <h4>SUMMER COLLECTION 2021</h4>
-                <button className="discoverButton">DISCOVER</button>
+                <button className = "discoverButton">DISCOVER</button>
             </div>
-            <div className="productImageConstant">
+            <div className = "productImageConstant">
                 <img 
-                    src={constImg}
-                    className={props.searchProduct === 'books' ? "ProductConstantImage-books" : "ProductConstantImage"}
-                    alt=" "
-                    onError={(e)=>{e.target.onerror = null; e.target.src="https://2.bp.blogspot.com/-m_ZWnDKS-Nw/XOauDQpO6-I/AAAAAAAzF0E/F-OPcHmjt-o2TWAKjNUL8SNRAAfpIcEgwCLcBGAs/s1600/AW3876169_00.gif"}}
+                    src = {constImg}
+                    className = {props.searchProduct === 'books' ? "ProductConstantImage-books" : "ProductConstantImage"}
+                    alt = " "
+                    onError = {(e)=>{
+                        e.target.onerror = null;
+                        e.target.src="https://2.bp.blogspot.com/-m_ZWnDKS-Nw/XOauDQpO6-I/AAAAAAAzF0E/F-OPcHmjt-o2TWAKjNUL8SNRAAfpIcEgwCLcBGAs/s1600/AW3876169_00.gif"
+                    }}
                 />
             </div>
         </div>

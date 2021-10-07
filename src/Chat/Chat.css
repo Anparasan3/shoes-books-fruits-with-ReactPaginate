@@ -9,6 +9,7 @@
     text-shadow: 6px 6px 1px 1px rgba(0, 0, 255, .2);
 }
 .MessageIcon{
+    cursor: pointer;
     width: 50px;
     height: 50px;
     color: #fa1e74;

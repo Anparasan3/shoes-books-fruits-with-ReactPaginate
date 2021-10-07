@@ -24,6 +24,7 @@
     max-height: 280px;
 }
 .discoverButton{
+    cursor: pointer;
     background: transparent;
     width: 200px;
     padding-left: 30px;

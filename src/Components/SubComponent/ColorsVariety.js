@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import '../Style/ColorsVariety.css'
 
 const ColorButton = styled.button`
+    cursor: pointer;
     margin-left: 8px;
     width: 30px;
     height: 30px;
@@ -20,18 +21,20 @@ export default function ColorsVariety(props) {
     }
 
     return (
-        <div className="Colors">
-            <div className="Color-name">{props.colorsTitle}</div>
-            <div className="colorButtonDiv">
+        <div className = "Colors">
+            <div className = "Color-name">{props.colorsTitle || props.colorTitle}</div>
+            <div className = "colorButtonDiv">
                 {
                     props.colorvariety.map((co) => {
                         if (currentColor === "") {
-                            setCurrentColor(props.colorvariety[0].color);
+                            setCurrentColor(props.colorvariety[0].code.hex || props.colorvariety[0].color);
+                        } else if (currentColor) {
+                            console.log('hello')
                         }
                         return (
                             <ColorButton
-                                ColorButtonColor={co.color}
-                                currentColor={currentColor}
+                                ColorButtonColor = {co.code.hex || co.color}
+                                currentColor = {currentColor}
                                 onClick={() => colorsFunction(co.color)}
                             />
                         );
