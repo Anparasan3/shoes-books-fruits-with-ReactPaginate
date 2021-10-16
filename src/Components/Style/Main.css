@@ -39,6 +39,7 @@
     color: white;
     background-color: #ff2b95;
 }
+
 .paginationActive a{
     /* box-shadow:2px 2px 2px 2px #3f3e3e2d; */
     box-shadow: 1px 1px 3px 3px #e955937c;

@@ -1,14 +1,14 @@
-.chatIcon{
+.chatIcon {
     position: fixed;
     right: 30px;
-    bottom: 30px;
+    bottom: 63px;
 }
-.far.fa-comment-alt{
+.far.fa-comment-alt {
     font-size: 50px;
     color: #fa1e74;
     text-shadow: 6px 6px 1px 1px rgba(0, 0, 255, .2);
 }
-.MessageIcon{
+.MessageIcon {
     cursor: pointer;
     width: 50px;
     height: 50px;
@@ -27,7 +27,7 @@
     background-color: #fa1e74;
 } */
 
-.chatcontainer{
+.chatcontainer {
     display: none;
     position: fixed;
     right: 80px;

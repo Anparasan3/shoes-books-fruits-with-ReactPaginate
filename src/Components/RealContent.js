@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import StarRate from './SubComponent/StarRate'
-import ColorsVariety from './SubComponent/ColorsVariety'
+import Colors from './SubComponent/Colors.js'
+import ImageComponent from './SubComponent/ImageComonent.js'
 import './Style/RealContent.css'
 import './Style/RealContentBook.css'
 
@@ -13,32 +14,29 @@ export default function RealContent(props) {
         a = 'books';
     }
 
+    const [Update, SetUpdate] = useState({
+        cardNo : 0,
+        imgNo  : 0
+    });
+
     return (
         <>
             <div className = {a === 'books' ? "books-container" : "product-container"}>
                 {
-                    items.map((im) => {
+                    items.map((im, index) => {
                         return (
                             <div className = {a === 'books' ? "books-content" : "product-content-image"}>
                                 <div className = {im.book_image ? "" : "image-div"}>
-                                    <img
-                                        src = {im.url || im.book_image || im.name || im.productImagePath || im.images[0]}
-                                        className = {im.book_image ? "productImage-books" : "productImage"}
-                                        alt = "products" 
-                                        key={im.id}
-                                        onError = {(e)=>{
-                                            e.target.onerror = null; 
-                                            e.target.src="https://2.bp.blogspot.com/-m_ZWnDKS-Nw/XOauDQpO6-I/AAAAAAAzF0E/F-OPcHmjt-o2TWAKjNUL8SNRAAfpIcEgwCLcBGAs/s1600/AW3876169_00.gif"
-                                        }}
+                                    <ImageComponent 
+                                        images={im.images} Update={Update} index={index}
+                                        classNames = {im.book_image ? "productImage-books" : "productImage"}
                                     />
                                 </div>
-
-                                <div className = "cardSecondBox">
+                                    <div className = "cardSecondBox">
                                     <div className = "productNameAndRupee">
                                         <li className = {a === 'books' ? 'booksName':"productName"}><b>{im.title || im.productName}</b></li>
                                         <li className = {a === 'books' ? 'bookMoney':"rupees"}> {im.price || im.onlineSellingPrice || im.Rs || im.sellingPrize || im.sellingPrice} </li>
                                     </div>
-
                                     <div className = "productNameAndRupee">
                                         <StarRate 
                                             starRate = {
@@ -49,21 +47,25 @@ export default function RealContent(props) {
                                         />
                                         {a === 'books' ? <div /> : <div className = "offerPrice">{im.actualPrize || im.mrp}</div>}
                                     </div>
-
                                     {im.rank   ? <div className = "rank">Rank : {im.rank}</div> : ''}
                                     {im.colors ? 
-                                        <ColorsVariety 
+                                        <Colors 
                                             colorsTitle = {im.colors.colorsTitle || im.colorTitle} 
-                                            colorvariety = {im.colors.colorvariety || im.colors} 
+                                            colors={im.colors} 
+                                            Update={Update} 
+                                            SetUpdate={SetUpdate} 
+                                            index={index}
                                         /> : ''
                                     }
                                     {im.author ? <div className = "author">Author : {im.author}</div> : <div />}
 
                                     <div className = "productDescription">{im.productLongDescription || im.productDescription}</div>
                                     <div className = "buynowDiv">
-                                        <button className = "buynow">
-                                            {im.buynow ? im.buynow : "BUY NOW"}
+                                        <a href={im.cta?.addToCartURL}>
+                                        <button className = "buynow" style={{backgroundColor: im.cta?.buttonColor?.code?.hex}}>
+                                            {im.buynow ? im.buynow : "ADD TO CARD"}
                                         </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

@@ -1,17 +1,30 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import './Style/Home.css';
+import ReactGA from 'react-ga'
 
 export default function Home(props) {
     let history = useHistory();
     function IndexShoes() {
-        history.push("/plugin-content/search?q=shoes")
+        ReactGA.event({
+            category: 'home',
+            action: 'shoes',
+        });
+        history.push("/plugin-content/search?product=shoes")
     }
     function IndexBooks() {
-        history.push("/plugin-content/search?q=books")
+        ReactGA.event({
+            category: 'home',
+            action: 'books',
+        });
+        history.push("/plugin-content/search?product=books")
     }
     function IndexFruits() {
-        history.push("/plugin-content/search?q=fruits")
+        ReactGA.event({
+            category: 'home',
+            action: 'fruits',
+        });
+        history.push("/plugin-content/search?product=fruits")
     }
     
     return (

@@ -1,78 +1,43 @@
-import React, { useState, useEffect, Suspense } from 'react'
-import ReactPaginate from 'react-paginate'
+import React, { useState, useEffect } from 'react';
+import Pagination from './Pagination'
+import axios from 'axios'
+import Posts from './Posts'
 import './Style/Main.css'
-import TopComponent from './TopComponent'
-import RealContent from './RealContent'
 
-export default function Main({ location }){
-    const params = new URLSearchParams(window.location.search);
-    const q = params.get('q');
-    console.log('testing q : ',q)
+function App({location}) {
+  const [posts, setPosts] = useState([])
+  const [loading, setLoading] = useState(false)
+  const [currentPage, setCurrentPage] = useState(1)
+  const [postsPerPage] = useState(6)
 
-    const [items, setItems] = useState([]);
-    let searchProduct = ''
-    let limits = 6;
-    if(q === 'shoes'){
-        // searchProduct = `https://plugin-content-api.herokuapp.com/shoes`
-        searchProduct = `https://plugin-content-original-api.herokuapp.com/product`;
-    } else if (q === 'fruits'){
-        searchProduct = `https://plugin-content-api.herokuapp.com/fruits`
-    } else if (q === 'books'){
-        searchProduct = `https://plugin-content-api.herokuapp.com/books`
-        limits = 8
-    } 
-    // else if (q === 'product') {
-    //     searchProduct = `https://plugin-content-original-api.herokuapp.com/product`;
-    // }
-
-    useEffect(() => {
-        const getComments = async () => {
-            const res = await fetch(
-                `${searchProduct}?_page=1&_limit=${limits}`
-            );
-            const data = await res.json();
-            setItems(data);
-        };
-        getComments();
-    }, [searchProduct, setItems, limits])
-    console.log(items);
-
-    // `https://fruits-shoes-api.herokuapp.com/${searchProduct}?_page=${currentPage}&_limit=${limits}`
-    const fetchComments = async (currentPage) => {
-        const res = await fetch(
-            `${searchProduct}?_page=${currentPage}&_limit=${limits}`
-        )
-        const data = await res.json();
-        return data;
+  useEffect(() => {
+    const fetchPosts = async () => {
+      setLoading(true)
+      // const res = await axios.get('https://plugin-content-original-api.herokuapp.com')
+      const res = await axios.get('https://json.extendsclass.com/bin/f64b1d0e4029')
+      setPosts(res.data.product)
+      setLoading(false)
     }
 
-    const handlePageClick = async (data) => {
-        console.log(data.selected);
-        let currentPage = data.selected + 1
-        const commentsformserver = await fetchComments(currentPage);
-        setItems(commentsformserver);
-    }
+    fetchPosts()
+  }, [])
 
-    return (
-        <Suspense fallback={<div className='loading'><h1>Loading....<br><h2>Please Wait.</h2></br></h1></div>}>
-            <div className="main-container">
-                <TopComponent items={items} q={q} />
-                <RealContent items={items} searchProduct={searchProduct} q={q} />
-                <ReactPaginate
-                    previousLabel={'<<'}
-                    nextLabel={'>>'}
-                    breakLabel={'...'}
-                    pageCount={10}
-                    marginPagesDisplayed={1}
-                    pageRangeDisplayed={3}
-                    onPageChange={handlePageClick}
-                    containerClassName={'paginationBttns'}
-                    previousLinkClassName={'previousBttn'}
-                    nextLinkClassName={'nextBttn'}
-                    disabledClassName={'paginationDisabled'}
-                    activeClassName={'paginationActive'}
-                />
-            </div>
-        </Suspense>
-    );
+  console.log('posts : ', posts)
+  if (loading && posts.length === 0) {
+    return <h2>Loading...</h2>
+  }
+  //Get current posts
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost)
+  const howManyPages = Math.ceil(posts.length/postsPerPage)
+  
+  return (
+    <div className="main-container">
+      <Posts posts={currentPosts} /> 
+      <Pagination pages = {howManyPages} setCurrentPage={setCurrentPage} />
+    </div>
+  );
 }
+
+export default App;
