@@ -31,7 +31,7 @@
     display: none;
     position: fixed;
     right: 80px;
-    bottom: 70px;
+    bottom: 120px;
     width: 23vw;
     min-width: 250px;
     max-width: 300px;
@@ -52,6 +52,5 @@
         right: auto;
         min-width: 240px;
         left: 18px;
-        bottom: 85px;
     }
 }
