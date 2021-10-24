@@ -25,7 +25,7 @@ export default function RealContent(props) {
                 {
                     items.map((im, index) => {
                         return (
-                            <div className = {a === 'books' ? "books-content" : "product-content-image"}>
+                            <div className = {a === 'books' ? "books-content" : "product-content-image"} key={index}>
                                 <div className = {im.book_image ? "" : "image-div"}>
                                     <ImageComponent 
                                         images={im.images} Update={Update} index={index}

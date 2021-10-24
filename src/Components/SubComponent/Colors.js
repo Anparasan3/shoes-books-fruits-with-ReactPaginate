@@ -20,14 +20,14 @@ export default function Colors(props){
             {
                 props.colors.map((data, index) => {
                     return(
-                        <>
+                        <div key = {index}>
                             <MyButton
                                 ColorButtonColor = {data.code.hex || data.color}
                                 onClick={() => props.SetUpdate({cardNo:props.index.toString(), imgNo:index.toString()})}
                                 focus={
                                     props.Update.cardNo == props.index ? (props.Update.imgNo == index ?  "1" : "0") : (index === 0) ? "1" : "0"}
                             />
-                        </>
+                        </div>
                     )
                 })
             }

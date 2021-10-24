@@ -14,18 +14,6 @@
     height: 50px;
     color: #fa1e74;
 }
-/* .Message{
-    position: fixed;
-    display: none;
-    right: 110px;
-    bottom: 58px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 6px;
-    background-color: #fa1e74;
-} */
 
 .chatcontainer {
     display: none;
@@ -37,16 +25,16 @@
     max-width: 300px;
     height: auto;
     padding: 4px;
-    background-color: #fa1e726c;
+    /* background-color: #fa1e726c; */
     border-radius: 10px;
     border: none;
     color: white;
 }
 .chatroom { height: 60vh !important; }
-.chatroom h3 { background-color: #fa1e74 !important; }
+/* .chatroom h3 { background-color: #fa1e74 !important; }
 .chatroom .chats .chat-buttons .chat-button { background-color: #fa1e74 !important; }
 .chatroom .input { background-color: #fa1e74 !important; }
-.chatroom .input input[type=submit] { background-color: #fa1e74 !important; }
+.chatroom .input input[type=submit] { background-color: #fa1e74 !important; } */
 @media (max-width:356px) {
     .chatcontainer{
         right: auto;

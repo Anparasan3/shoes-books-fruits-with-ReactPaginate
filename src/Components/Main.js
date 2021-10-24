@@ -4,19 +4,24 @@ import axios from 'axios'
 import Posts from './Posts'
 import './Style/Main.css'
 
-function App({location}) {
+function App(props, {location}) {
+
+  const [allData, setAllData] = useState('')
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(false)
   const [currentPage, setCurrentPage] = useState(1)
   const [postsPerPage] = useState(6)
 
+  props.setState(allData?.settings?.header?.headerBGColor?.code?.hex);
+  
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true)
       // const res = await axios.get('https://plugin-content-original-api.herokuapp.com')
       const res = await axios.get('https://json.extendsclass.com/bin/f64b1d0e4029')
-      setPosts(res.data.product)
-      setLoading(false)
+      setAllData(res.data);
+      setPosts(res.data.product);
+      setLoading(false);
     }
 
     fetchPosts()

@@ -4,17 +4,15 @@ import './Style/TopComponent.css'
 export default function TopComponent(props) {
     const { items } = props;
 
-    const constImage = items.slice(0,1)
     let constImg = ''
-    if (constImage[0]){
-        if (props.q === 'shoes') {
-            constImg ='https://i.pinimg.com/originals/88/45/ec/8845ecfd5c1a77c85a4f6ac19c45a907.png';
-        } else if (props.q === 'fruits') {
-            constImg='https://www.animatedimages.org/data/media/53/animated-book-image-0032.gif'
-        } else {
-            constImg = constImage[0].constantImg;
-        }
+    if (props.q === 'shoes') {
+        constImg ='https://i.pinimg.com/originals/88/45/ec/8845ecfd5c1a77c85a4f6ac19c45a907.png';
+    } else if (props.q === 'fruits') {
+        constImg='https://freepngimg.com/thumb/fruit/4-2-fruit-png-image.png'
+    } else {
+        constImg = 'https://www.animatedimages.org/data/media/53/animated-book-image-0032.gif'
     }
+    
     return (
         <div className = "productConstant-container">
             <div className = "productTittle">
